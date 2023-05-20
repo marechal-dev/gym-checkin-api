@@ -8,8 +8,11 @@ db/*.db
 .env
 .env.test
 
-# Build
+# Build folder
 build
+
+# Testing
+coverage
 
 # Misc.
 .vscode
