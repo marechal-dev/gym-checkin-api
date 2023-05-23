@@ -6,8 +6,6 @@ import { execSync } from 'node:child_process'
 import { Environment } from 'vitest'
 import { PrismaClient } from '@prisma/client'
 
-// "postgresql://docker:docker@localhost:5432/apisolid?schema=public"
-
 const prisma = new PrismaClient()
 
 function generateDatabaseURL(schema: string): string {
