@@ -8,15 +8,15 @@ export async function nearbyController(
   reply: FastifyReply,
 ) {
   const fetchNearbyGymsBodySchema = z.object({
-    latitude: z.number().refine((value) => {
+    latitude: z.coerce.number().refine((value) => {
       return Math.abs(value) <= 90
     }),
-    longitude: z.number().refine((value) => {
+    longitude: z.coerce.number().refine((value) => {
       return Math.abs(value) <= 180
     }),
   })
 
-  const data = fetchNearbyGymsBodySchema.parse(request.body)
+  const data = fetchNearbyGymsBodySchema.parse(request.query)
 
   const fetchNearbyGymsUseCase = FetchNearbyGymsUseCaseFactory.make()
 
