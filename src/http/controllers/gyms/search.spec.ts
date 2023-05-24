@@ -14,7 +14,7 @@ describe('Search Gyms Controller End-To-End Test Suite', () => {
   })
 
   it('should be able to search for gyms by title', async () => {
-    const { token } = await createAndAuthenticateUser(app)
+    const { token } = await createAndAuthenticateUser(app, true)
 
     await request(app.server)
       .post('/gyms')

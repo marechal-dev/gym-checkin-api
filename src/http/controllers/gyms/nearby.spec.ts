@@ -14,7 +14,7 @@ describe('Find Nearby Gyms Controller End-To-End Test Suite', () => {
   })
 
   it('should be able to list nearby gyms', async () => {
-    const { token } = await createAndAuthenticateUser(app)
+    const { token } = await createAndAuthenticateUser(app, true)
 
     // Nearby
     await request(app.server)
