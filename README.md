@@ -37,13 +37,13 @@ RESTFul API for checking-in on a Gym
 - [x] An user can't be registered with a duplicated e-mail;
 - [x] An user can't check-in two times in the same day;
 - [x] An user can't check-in if not within 100m from the gym;
-- [ ] A check-in can be only validated 20 minutes after its creation;
-- [ ] A check-in can be only validated by administrators;
-- [ ] A gym can be only registered by administrators;
+- [x] A check-in can be only validated 20 minutes after its creation;
+- [x] A check-in can be only validated by administrators;
+- [x] A gym can be only registered by administrators;
 
 ## RNFs (Non-Functional Requirements)
 
 - [x] User's password must be encrypted;
-- [ ] The Data must be stored in a PostgreSQL RDBMS;
-- [ ] All data lists must be paginated with a max of 20 itens per page;
-- [ ] The user must be identified by a JWT;
+- [x] The Data must be stored in a PostgreSQL RDBMS;
+- [x] All data lists must be paginated with a max of 20 itens per page;
+- [x] The user must be identified by a JWT;
